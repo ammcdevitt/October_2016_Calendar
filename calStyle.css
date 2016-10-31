@@ -6,10 +6,10 @@ table.calendar{
 	border-radius: 0 0 25px 25px;
 }
 
-
-/*Set the background color of the table header (names of the days of the week)*/
+/*Set the background color and the central alignment of the table headings (names of the days of the week)*/
 thead th {
 	background-color: #76D9B6;
+	text-align: center;
 }
 
 /*Alternate colors between even and odd weeks*/
@@ -20,49 +20,31 @@ tr:nth-child(even) {
 	background: #EF986E;
 }
 
-/*To curve the bottom, we need to curve the
-row and the element.  And each element needs to 
-curve a different corner.*/
+/*Curve the bottom left and bottom right corners*/
 tr:last-child>td:first-child {
 	border-radius: 0 0 0 25px;	
 }
-
 tr:last-child>td:last-child{
 	border-radius: 0 0 25px 0;	
 }
 
-/*Format the caption. Use border-radius for just some corners*/
-.calendar caption{
+/*Format the background color, text color, and font size of the caption ('OCTOBER 2016'). Curve the top left and top right corners.*/
+.calendar caption {
 	background-color: #072049;
 	color:#ffffff;
 	font-size: 150%;
 	border-radius: 25px 25px 0 0;
-	border-radius: 25px 25px 0 0;
 }
 
-/*Format common heading and element attributes*/
-.calendar th, .calendar td{
-	margin: 2px;
-	padding-bottom: 2px;
-}
-
-/*Format the table headings*/
-th{
-	text-align: center;
-	background: #ffffff;
-}
-
-/*Set the size and alignment for elements*/
+/*Sets the width and height for each day. Also for the individual days, make sure the dates are located at the top.*/
 .calendar td{
 	width:75px;
 	height:75px;
 	vertical-align:top;
 }
 
-/*Use a background image*/
+/*For the months of Sept 2016 and Nov 2016, change the font color and the background color/pattern using linear gradient*/
 .anotherMonth {
-	padding:0;
-	margin: 0;
 	color: #aeaeaf;
 	background-color: #ffffff;
   	border-spacing: 0;
@@ -78,7 +60,7 @@ span{
 	visibility: hidden;
 }
 
-/*Show event when the date is clicked on*/
+/*Reveal event when the date when user hovers over date*/
 td:hover>span{
 	visibility:visible;
 }
