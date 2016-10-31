@@ -1,21 +1,23 @@
-/*Set the table color, border, and spacing*/
-table.cal{
-	color:#06425C;
+/*Set the table's entire border, borders for days, rounded edges*/
+table.calendar{
 	border-spacing: 3px;
 	border: 3px solid black;
 	border-radius: 25px 25px 0 0;
 	border-radius: 0 0 25px 25px;
 }
+
+
+/*Set the background color of the table header (names of the days of the week)*/
+thead th {
+	background-color: #76D9B6;
+}
+
 /*Alternate colors between even and odd weeks*/
 tr:nth-child(odd) {
 	background: #FFB18B;
 }
 tr:nth-child(even) {
 	background: #EF986E;
-}
-
-thead th {
-	background-color: #76D9B6;
 }
 
 /*To curve the bottom, we need to curve the
@@ -29,9 +31,8 @@ tr:last-child>td:last-child{
 	border-radius: 0 0 25px 0;	
 }
 
-/*Format the caption
-Use border-radius for just some corners*/
-.cal caption{
+/*Format the caption. Use border-radius for just some corners*/
+.calendar caption{
 	background-color: #072049;
 	color:#ffffff;
 	font-size: 150%;
@@ -40,7 +41,7 @@ Use border-radius for just some corners*/
 }
 
 /*Format common heading and element attributes*/
-.cal th, .cal td{
+.calendar th, .calendar td{
 	margin: 2px;
 	padding-bottom: 2px;
 }
@@ -52,7 +53,7 @@ th{
 }
 
 /*Set the size and alignment for elements*/
-.cal td{
+.calendar td{
 	width:75px;
 	height:75px;
 	vertical-align:top;
