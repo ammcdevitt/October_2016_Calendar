@@ -36,7 +36,7 @@ tr:last-child>td:last-child{
 	border-radius: 25px 25px 0 0;
 }
 
-/*Sets the width and height for each day. Also for the individual days, make sure the dates are located at the top.*/
+/*Sets the width and height for each day. Also, make sure the date numbers are located at the top.*/
 .calendar td{
 	width:75px;
 	height:75px;
